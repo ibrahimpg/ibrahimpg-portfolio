@@ -122,7 +122,7 @@ export default {
       {
         title: 'Five Pointe Moving',
         src: fpm,
-        url: 'https://felstriker.com',
+        url: 'https://fivepointemoving.com',
         description: 'Moving company.',
         flex: 12,
       },
