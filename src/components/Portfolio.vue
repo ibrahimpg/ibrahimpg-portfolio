@@ -54,6 +54,7 @@
                   v-if='card.url'
                   :href=card.url
                   target="_blank"
+                  rel="noreferrer"
                   :class="{'show-btns':hover}" color="rgba(0,0,0,0)" icon>
                     <v-icon :class="{ 'show-btns': hover }" color="rgba(0,0,0,0)">
                       mdi-open-in-new
