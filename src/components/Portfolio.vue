@@ -29,7 +29,7 @@
       <v-row dense>
 
         <v-col
-          v-for="card in cards.slice(tabChosen,tabChosen+3)"
+          v-for="card in cards.slice(tabChosen,tabChosenTo)"
           :key="card.title"
           :cols="card.flex"
         >
@@ -94,6 +94,7 @@ import thv from '../assets/thv.jpg';
 import venomapi from '../assets/venomapi.jpg';
 import venomgram from '../assets/venomgram.jpg';
 import fpm from '../assets/fpm.jpg';
+import creditcure from '../assets/creditcure.jpg';
 
 export default {
   data: () => ({
@@ -146,7 +147,14 @@ export default {
         url: 'https://venomgram.com',
         description: 'Instagram clone PWA built with Vue.',
         giturl: 'https://github.com/ibrahimpg/venomgram-ui',
-        flex: 12,
+        flex: 6,
+      },
+      {
+        title: 'CreditCure',
+        src: creditcure,
+        url: 'https://creditcure.cc',
+        description: 'Financial services landing page built with Vue.',
+        flex: 6,
       },
       {
         title: 'Venomgram Server',
@@ -165,16 +173,20 @@ export default {
       },
     ],
     tabChosen: 0,
+    tabChosenTo: 3,
   }),
   methods: {
     switch1() {
       this.tabChosen = 0;
+      this.tabChosenTo = 3;
     },
     switch2() {
       this.tabChosen = 3;
+      this.tabChosenTo = 6;
     },
     switch3() {
       this.tabChosen = 6;
+      this.tabChosenTo = 10;
     },
   },
 };
