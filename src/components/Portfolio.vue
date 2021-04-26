@@ -87,7 +87,6 @@
 <script>
 import alphafarmsimg from '../assets/alphafarms.jpg';
 import raintechimg from '../assets/raintech.jpg';
-import missionmorale from '../assets/missionmorale.jpg';
 import fiftystates from '../assets/fiftystates.jpg';
 import bankable from '../assets/bankable.jpg';
 import thv from '../assets/thv.jpg';
@@ -100,18 +99,11 @@ export default {
   data: () => ({
     cards: [
       {
-        title: 'Mission Morale',
-        src: missionmorale,
-        flex: 12,
-        description: 'Charity organization for US troops.',
-        url: 'https://missionmorale.org',
-      },
-      {
         title: 'Rain.Tech',
         src: raintechimg,
         description: 'Managed IT, cloud, & cyber security firm.',
         url: 'https://rain.tech',
-        flex: 6,
+        flex: 12,
       },
       {
         title: 'Alpha Farms',
@@ -121,13 +113,6 @@ export default {
         flex: 6,
       },
       {
-        title: 'Five Pointe Moving',
-        src: fpm,
-        url: 'https://fivepointemoving.com',
-        description: 'Moving company.',
-        flex: 12,
-      },
-      {
         title: 'The Healing Voices',
         src: thv,
         description: 'Catholic blog for victims of abuse.',
@@ -135,11 +120,25 @@ export default {
         flex: 6,
       },
       {
+        title: 'Five Pointe Moving',
+        src: fpm,
+        description: 'Moving company based in Michigan.',
+        url: 'https://fivepointemoving.com',
+        flex: 6,
+      },
+      {
         title: 'Bankable Blog',
         src: bankable,
-        url: 'https://bankable.org/blog',
         description: 'Blog layout built with dynamic PHP templating.',
+        url: 'https://bankable.org/blog',
         flex: 6,
+      },
+      {
+        title: 'CreditCure',
+        src: creditcure,
+        description: 'Financial services landing page built with Vue.',
+        url: 'https://creditcure.cc',
+        flex: 12,
       },
       {
         title: 'Venomgram',
@@ -147,13 +146,6 @@ export default {
         url: 'https://venomgram.com',
         description: 'Instagram clone PWA built with Vue.',
         giturl: 'https://github.com/ibrahimpg/venomgram-ui',
-        flex: 6,
-      },
-      {
-        title: 'CreditCure',
-        src: creditcure,
-        url: 'https://creditcure.cc',
-        description: 'Financial services landing page built with Vue.',
         flex: 6,
       },
       {
@@ -167,7 +159,7 @@ export default {
         title: 'Name the 50 states',
         src: fiftystates,
         url: 'https://ibrahimpg.github.io/50states/',
-        flex: 6,
+        flex: 12,
         description: 'Quiz built with Vue & deployed on GitHub Pages.',
         giturl: 'https://github.com/ibrahimpg/50states',
       },
